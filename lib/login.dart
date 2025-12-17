@@ -16,6 +16,8 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(title: Text('Login = 3ii et MDP = gr3ii.2025')),
+  
       
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -62,9 +64,8 @@ class _LoginState extends State<Login> {
         SizedBox(height: 30),
 
         OutlinedButton(onPressed: () {
-          if ((controllerLogin.text == "3ii" && controllerPassword.text == "P@sser3ii.2025")
-          || (controllerLogin.text == "admin" && controllerPassword.text == "Gestion@123.2025") 
-          || (controllerLogin.text == "gerant" && controllerPassword.text == "gerant.3ii@2025")
+          if ((controllerLogin.text == "3ii" && controllerPassword.text == "gr3ii.2025")
+          
           ){
             Navigator.of(context).pushReplacement(
             MaterialPageRoute<void>(
